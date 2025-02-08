@@ -1,10 +1,24 @@
 {
   "name": "@fastify-boilerplate/app",
   "type": "module",
+  "scripts": {
+    "build": "node ./esbuild.config.js",
+    "start": "node --loader=extensionless ./dist/index.js",
+    "dev": "nodemon"
+  },
+  "nodemonConfig": {
+    "watch": "src",
+    "ignore": ["dist/**", "node_modules/**"],
+    "ext": "ts",
+    "exec": "rm -rf dist && yarn node ./esbuild.config.js && node --loader=extensionless ./dist/index.js "
+  },
+  "dependencies": {
+    "extensionless": "^1.9.9"
+  },
   "devDependencies": {
     "@types/node": "20",
     "esbuild": "^0.24.2",
-    "glob": "^11.0.1",
+    "nodemon": "^3.1.9",
     "typescript": "^5.7.3"
   }
 }
