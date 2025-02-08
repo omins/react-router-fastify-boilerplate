@@ -276,6 +276,8 @@ __metadata:
   resolution: "@fastify-boilerplate/app@workspace:app"
   dependencies:
     "@types/node": "npm:20"
+    dotenv: "npm:^16.4.7"
+    dotenv-safe: "npm:^9.1.0"
     esbuild: "npm:^0.24.2"
     extensionless: "npm:^1.9.9"
     fastify: "npm:^5.2.1"
@@ -647,6 +649,22 @@ __metadata:
   version: 2.0.3
   resolution: "dequal@npm:2.0.3"
   checksum: 10c0/f98860cdf58b64991ae10205137c0e97d384c3a4edc7f807603887b7c4b850af1224a33d88012009f150861cbee4fa2d322c4cc04b9313bee312e47f6ecaa888
+  languageName: node
+  linkType: hard
+
+"dotenv-safe@npm:^9.1.0":
+  version: 9.1.0
+  resolution: "dotenv-safe@npm:9.1.0"
+  peerDependencies:
+    dotenv: ">= 8.2.0"
+  checksum: 10c0/0e1cb4fbd65fea8c0e3dfc98a793d5a783ea1e361ecc250e6f5e28b9385fff9388ad85d7da7eb6402ed8f9591f91bf3b4a1ad9911cb746dd16acdd341d1d36e1
+  languageName: node
+  linkType: hard
+
+"dotenv@npm:^16.4.7":
+  version: 16.4.7
+  resolution: "dotenv@npm:16.4.7"
+  checksum: 10c0/be9f597e36a8daf834452daa1f4cc30e5375a5968f98f46d89b16b983c567398a330580c88395069a77473943c06b877d1ca25b4afafcdd6d4adb549e8293462
   languageName: node
   linkType: hard
 

@@ -16,6 +16,8 @@
     "exec": "rm -rf dist && yarn node ./esbuild.config.js && node --loader=extensionless ./dist/index.js "
   },
   "dependencies": {
+    "dotenv": "^16.4.7",
+    "dotenv-safe": "^9.1.0",
     "extensionless": "^1.9.9",
     "fastify": "^5.2.1"
   },
