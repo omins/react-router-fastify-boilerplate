@@ -1,3 +1,10 @@
 {
-  "name": "@fastify-boilerplate/app"
+  "name": "@fastify-boilerplate/app",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "20",
+    "esbuild": "^0.24.2",
+    "glob": "^11.0.1",
+    "typescript": "^5.7.3"
+  }
 }
