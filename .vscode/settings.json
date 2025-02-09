@@ -3,11 +3,9 @@
     "**/.yarn": true,
     "**/.pnp.*": true
   },
-
   // Typescript
   "typescript.tsdk": ".yarn/sdks/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
-
   // Biome
   "editor.defaultFormatter": "biomejs.biome",
   "editor.formatOnSave": true,
