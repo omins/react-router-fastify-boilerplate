@@ -7,3 +7,4 @@ const PORT = Number(process.env.PORT || 8080);
 const app = makeApp();
 
 await app.listen({ host: HOST, port: PORT });
+app.log.info({}, `Server is running on ${HOST}:${PORT}`);
