@@ -8,6 +8,6 @@ export default fp(
     // });
   },
   {
-    name: "cors",
+    name: "app.cors",
   },
 );
