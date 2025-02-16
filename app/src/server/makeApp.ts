@@ -8,7 +8,7 @@ export function makeApp() {
   });
 
   app.register(fastifyAutoload, {
-    dir: path.resolve("./dist/plugins"),
+    dir: path.resolve("./dist/server/plugins"),
   });
 
   app.get("/healthz", async () => {

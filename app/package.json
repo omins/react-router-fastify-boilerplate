@@ -2,23 +2,21 @@
   "name": "@fastify-boilerplate/app",
   "type": "module",
   "scripts": {
-    "build": "node ./esbuild.config.js",
-    "start": "node --loader=extensionless ./dist/index.js",
+    "build": "node ./esbuild.config.js && react-router build",
+    "start": "NODE_ENV=production node --loader=extensionless ./dist/server/index.js",
     "dev": "nodemon"
   },
   "nodemonConfig": {
     "watch": "src",
-    "ignore": [
-      "dist/**",
-      "node_modules/**"
-    ],
+    "ignore": ["dist/**", "node_modules/**", "src/web/**"],
     "ext": "ts",
-    "exec": "rm -rf dist && yarn node ./esbuild.config.js && node --loader=extensionless ./dist/index.js | yarn pino-pretty --singleLine"
+    "exec": "rm -rf dist/server && yarn node ./esbuild.config.js && node --loader=extensionless ./dist/server/index.js | yarn pino-pretty --singleLine"
   },
   "dependencies": {
     "@fastify/autoload": "^6.1.0",
     "@fastify/cors": "^10.0.2",
     "@fastify/env": "^5.0.2",
+    "@mcansh/remix-fastify": "^4.0.5",
     "@react-router/node": "^7.1.5",
     "@sinclair/typebox": "^0.34.16",
     "dotenv": "^16.4.7",
