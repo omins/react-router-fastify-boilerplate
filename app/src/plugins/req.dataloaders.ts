@@ -10,7 +10,7 @@ declare module "fastify" {
 export default fp(
   async (app) => {
     // biome-ignore lint/suspicious/noExplicitAny: <explanation>
-    app.decorateRequest("dataloaders", {} as any);
+    app.decorateRequest("dataloaders", null as any);
 
     app.addHook("preHandler", async (req, reply) => {
       req.dataloaders = {};
