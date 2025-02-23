@@ -24,7 +24,10 @@ export default fp(async (app) => {
     method: ["GET", "POST", "OPTIONS"],
     url: yoga.graphqlEndpoint,
     async handler(req, reply) {
-      const context = {};
+      const context: Context = {
+        app,
+        req,
+      };
 
       const response = await yoga.handleNodeRequestAndResponse(
         req,
