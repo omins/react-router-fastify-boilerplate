@@ -694,6 +694,7 @@ __metadata:
     react: "npm:^19.0.0"
     react-dom: "npm:^19.0.0"
     react-router: "npm:^7.1.5"
+    relay-compiler: "npm:^18.2.0"
     typescript: "npm:^5.7.3"
     vite: "npm:^6.1.0"
     vite-tsconfig-paths: "npm:^5.1.4"
@@ -5148,6 +5149,15 @@ __metadata:
   version: 0.14.1
   resolution: "regenerator-runtime@npm:0.14.1"
   checksum: 10c0/1b16eb2c4bceb1665c89de70dcb64126a22bc8eb958feef3cd68fe11ac6d2a4899b5cd1b80b0774c7c03591dc57d16631a7f69d2daa2ec98100e2f29f7ec4cc4
+  languageName: node
+  linkType: hard
+
+"relay-compiler@npm:^18.2.0":
+  version: 18.2.0
+  resolution: "relay-compiler@npm:18.2.0"
+  bin:
+    relay-compiler: cli.js
+  checksum: 10c0/3249b9def1cf152813a9f7814e708c9a918ec1b87434188d4a710742b11be0a973d6f49b8935a28708e74e628fc326f72072b0c9da58c2824cd8afbcd3c94643
   languageName: node
   linkType: hard
 
