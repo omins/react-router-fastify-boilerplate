@@ -5,6 +5,7 @@ import fastify from "fastify";
 export function makeApp() {
   const app = fastify({
     logger: true,
+    disableRequestLogging: true,
   });
 
   app.register(fastifyAutoload, {

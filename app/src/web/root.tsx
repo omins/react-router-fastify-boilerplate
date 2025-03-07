@@ -1,4 +1,7 @@
+import { useMemo } from "react";
+import { RelayEnvironmentProvider } from "react-relay";
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from "react-router";
+import { createRelayRenderEnvironment } from "./relay/createRelayRenderEnvironment";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -19,5 +22,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  const environment = useMemo(() => createRelayRenderEnvironment(), []);
+
+  return (
+    <RelayEnvironmentProvider environment={environment}>
+      <Outlet />
+    </RelayEnvironmentProvider>
+  );
 }
